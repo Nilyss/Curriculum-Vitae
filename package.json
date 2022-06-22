@@ -1,0 +1,21 @@
+{
+  "name": "curriculum-vitae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./public/scss/Styles.scss:./public/css/Styles.css -w --style compressed",
+    "prefix" : "postcss ./public/css/Styles.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nilyss/Curriculum-Vitae.git"
+  },
+  "author": "Nicolas DECRESSAC",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Nilyss/Curriculum-Vitae/issues"
+  },
+  "homepage": "https://github.com/Nilyss/Curriculum-Vitae#readme"
+}

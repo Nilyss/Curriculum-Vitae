@@ -1,0 +1,11 @@
+@import '../Utils/variables';
+
+@mixin fontArticle{
+font-family: $fontSecondary;
+  color: $fontColorPrimary;
+}
+
+@mixin fontTitle {
+  font-family: $fontSecondary;
+  color: $fontColorPrimary;
+}

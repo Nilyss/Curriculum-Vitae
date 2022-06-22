@@ -1,0 +1,63 @@
+@import '../Utils/variables';
+@import '../Utils/_mixins.scss';
+@import '../Utils/_keyframes.scss';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f2f2;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  @include fontTitle;
+}
+
+section {
+position: absolute;
+  left: 15rem;
+  h1 {
+    background-image: $titleGradient;
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: titleAnimation 2000ms linear infinite;
+  }
+}
+
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 1.5rem;
+  h2 {
+    font-family: $fontTertiary;
+    font-size: 2rem;
+  }
+  p {
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__list {
+    list-style: none;
+    a{
+      text-decoration: none;
+      color: #000000;
+      &:hover {
+        color: #8B008B;
+      }
+    }
+  }
+}
+
