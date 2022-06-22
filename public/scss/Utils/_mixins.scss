@@ -14,3 +14,12 @@ font-family: $fontSecondary;
 font-family:  $fontPrimary;
   color: $fontColorPrimary;
 }
+
+@mixin scaleHover {
+  transform: scale(1);
+  transition: 200ms ease-in;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 400ms ease-out;
+  }
+}
