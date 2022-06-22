@@ -2,8 +2,6 @@
 @import '../Utils/_mixins.scss';
 @import '../Utils/_keyframes.scss';
 
-
-
 header {
   @media (max-width: $breakpointTablet) {
     flex-wrap: nowrap;
@@ -11,17 +9,25 @@ header {
   @media (max-width: $breakpointMobile) {
     flex-wrap: wrap;
   }
+  margin-bottom: 5rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f2f2f2;
+  background: $articlesBackground;
   border-radius: 0 0 15px 15px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  @include fontTitle;
+  box-shadow: $boxShadow;
+  @include fontArticle;
 
+  .profilePicture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: $boxShadowArticle;
+  }
 
-section {
+.banner {
   @media (max-width: $breakpointTablet) {
     position: unset;
     width: fit-content;
@@ -41,15 +47,7 @@ position: absolute;
   }
 }
 
-.profilePicture {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.contact {
+.banner__contact{
   @media (max-width: $breakpointTablet) {
     position: unset;
     width: 100%;
@@ -65,11 +63,9 @@ position: absolute;
     font-family: $fontTertiary;
     font-size: 2rem;
   }
-  p {
-    strong {
-      font-weight: 700;
-    }
-  }
+.banner__contact__list--strong {
+  font-weight: 700;
+}
   &__list {
     list-style: none;
     a{

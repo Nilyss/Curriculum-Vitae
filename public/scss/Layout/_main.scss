@@ -1,0 +1,68 @@
+@import '../Utils/variables.scss';
+@import '../Utils/mixins.scss';
+
+main {
+  max-width: 1440px;
+  background: $backgroundColor;
+  display: flex;
+  margin: auto;
+  flex-flow: wrap;
+  width: 100%;
+}
+h2 {
+  @include fontTitle;
+  font-weight: 700;
+  font-size: 2rem;
+text-align: center;
+}
+
+h3 {
+  @include  fontSubtitle;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li {
+  @include  fontArticle;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-flow: column;
+  padding-right: 1rem;
+}
+
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: oblique;
+}
+
+.training, .experience, .language,  .softSkills {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  background: $articlesBackground;
+  border-radius: $borderRadiusArticles;
+  box-shadow: $boxShadowArticle;
+}
+
+ .interest {
+   margin: auto;
+   width: 48%;
+   background: $articlesBackground;
+   border-radius: $borderRadiusArticles;
+   box-shadow: $boxShadowArticle;
+ }
+
+.training {
+
+}
+
+
