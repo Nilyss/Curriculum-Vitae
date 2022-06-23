@@ -108,7 +108,8 @@ header {
   position: absolute;
   transform: translateX(105%);
   transition: All 800ms ease-out;
-  background: $translateBackground;
+  background: url("../asset/articlebg.webp") no-repeat fixed;
+;
 }
 
 .environment {
