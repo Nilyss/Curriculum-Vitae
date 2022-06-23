@@ -1,5 +1,5 @@
 // Get the back to top button
-const BUTTON = document.querySelector("#BackToTopBtn");
+const BUTTON = document.querySelector("#backToTopBtn");
 
 // display button when the user scroll down
 window.onscroll = function () {
