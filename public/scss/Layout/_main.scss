@@ -12,8 +12,7 @@ main {
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
+  margin-left: 4rem;
   @include fontTitle;
   font-weight: 700;
   font-size: 1.8rem;
@@ -54,12 +53,32 @@ em {
   width: 48%;
 }
 
-.language, .softSkills {
+ .softSkills {
    @include cardBody;
-  width: 30%;
+  width: 48%;
  }
 
   .interest {
     @include cardBody;
-  width: 50%;
+  width: 48%;
   }
+
+  .language {
+    display: flex;
+    justify-content: center;
+
+    @include cardBody;
+    width: 100%;
+    ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
+

@@ -1,3 +1,26 @@
+@import '../Utils/variables.scss';
+@import '../Utils/mixins.scss';
+@import '../Utils/_keyframes.scss';
+
 *{
   box-sizing: border-box;
+}
+
+body {
+  background: url("../asset/bg.webp") no-repeat fixed;
+}
+
+#BackToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: $borderRadiusArticles;
+  box-shadow: $boxShadowArticle;
+  @include scaleHover;
 }
