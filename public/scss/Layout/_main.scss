@@ -49,17 +49,17 @@ em {
 }
 
 .training, .experience {
-@include cardBody;
+@include cardMediaQueries;
   width: 48%;
 }
 
  .softSkills {
-   @include cardBody;
+   @include cardMediaQueries;
   width: 48%;
  }
 
   .interest {
-    @include cardBody;
+    @include cardMediaQueries;
   width: 48%;
   }
 
@@ -67,7 +67,7 @@ em {
     display: flex;
     justify-content: center;
 
-    @include cardBody;
+    @include cardMediaQueries;
     width: 100%;
     ul {
       width: 100%;

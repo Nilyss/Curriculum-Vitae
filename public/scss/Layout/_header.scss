@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $articlesBackground;
+  background: url("../asset/articlebg.webp") no-repeat fixed;
   border-radius: 0 0 15px 15px;
   box-shadow: $boxShadow;
   @include fontArticle;
@@ -95,6 +95,9 @@ header {
 }
 
 .banner__contact__environment {
+  @media (max-width: $breakpointTablet) {
+    top: -15rem;
+  }
   box-shadow: $boxShadowArticle;
   border-radius: $borderRadiusArticles;
   display: flex;
@@ -106,7 +109,6 @@ header {
   transform: translateX(105%);
   transition: All 800ms ease-out;
   background: $translateBackground;
-
 }
 
 .environment {

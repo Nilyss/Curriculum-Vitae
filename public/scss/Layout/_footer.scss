@@ -1,9 +1,50 @@
-@import '../Utils/variables.scss';
-@import '../Utils/mixins.scss';
+@import "../Utils/variables.scss";
+@import "../Utils/mixins.scss";
 
 footer {
-  background: $articlesBackground;
-  height: 300px;
-  margin-top: 5rem;
-  border-radius: 15px 15px 0 0 ;
+  background: url("../asset/articlebg.webp") no-repeat fixed;
+  border-radius: 15px 15px 0 0;
+
+  nav {
+    ul {
+      margin: 5.5rem 0 0 0 ;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      a{
+        @include fontArticle;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        &:hover {
+          background-image: $gradient;
+          background-clip: border-box;
+          background-size: 300% auto;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          transform: scale(1.1);
+          transition: all 400ms ease-out;
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  margin: 1rem 0 0 0 ;
+  padding: 3rem;
+  width: 100%;
+}
+
+.footerNav {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.navIcon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }

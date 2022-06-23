@@ -24,15 +24,6 @@ font-family:  $fontPrimary;
   }
 }
 
-@mixin scaleFocus {
-  transform: scale(1);
-  transition: 200ms ease-in;
-  &:focus {
-    transform: scale(1.05);
-    transition: all 400ms ease-out;
-  }
-}
-
 @mixin h2GradientHover {
   &:hover {
     animation: boxShadowHover 300ms ease-out forwards;
@@ -51,28 +42,20 @@ font-family:  $fontPrimary;
   }
 }
 
-@mixin h2GradientFocus{
-  &:focus{
-    animation: boxShadowHover 300ms ease-out forwards;
-    transform: scale(1.05);
-    transition: all 400ms ease-out;
-    @include scaleFocus;
-    h2 {
-      background-image: $gradient;
-      background-clip: border-box;
-      background-size: 100% auto;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      transform: scale(1.1);
-      transition: all 400ms ease-out;
-    }
-  }
-}
-
-@mixin cardBody {
+@mixin cardMediaQueries {
   @media(max-width: $breakpointTablet) {
     width: 100%;
-    @include h2GradientHover
+    &:hover {
+      h2 {
+        background-image: $gradient;
+        background-clip: border-box;
+        background-size: 100% auto;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transform: scale(1.1);
+        transition: all 400ms ease-out;
+      }
+    }
   }
   @media(min-width: $breakpointDesktop) {
     @include  h2GradientHover
@@ -82,7 +65,7 @@ font-family:  $fontPrimary;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 2%;
-  background: $articlesBackground;
+  background: url("../asset/articlebg.webp") no-repeat fixed;
   border-radius: $borderRadiusArticles;
   box-shadow: $boxShadowArticle;
   transform: scale(1);
