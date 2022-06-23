@@ -1,6 +1,6 @@
-@import '../Utils/variables';
-@import '../Utils/_mixins.scss';
-@import '../Utils/_keyframes.scss';
+@import "../Utils/variables";
+@import "../Utils/_mixins.scss";
+@import "../Utils/_keyframes.scss";
 
 header {
   @media (max-width: $breakpointTablet) {
@@ -9,6 +9,8 @@ header {
   @media (max-width: $breakpointMobile) {
     flex-wrap: wrap;
   }
+  overflow: hidden;
+
   margin-bottom: 5rem;
   width: 100%;
   display: flex;
@@ -28,16 +30,16 @@ header {
     @include scaleHover;
   }
 
-.banner {
-  @media (max-width: $breakpointTablet) {
-    position: unset;
-    width: fit-content;
-    text-align: right;
-    padding: 1.5rem;
+  .banner {
+    @media (max-width: $breakpointTablet) {
+      position: unset;
+      width: fit-content;
+      text-align: right;
+      padding: 1.5rem;
+    }
+    position: absolute;
+    left: 15rem;
   }
-position: absolute;
-  left: 15rem;
-}
   h1 {
     background-image: $gradient;
     background-clip: border-box;
@@ -48,13 +50,13 @@ position: absolute;
   }
 }
 
-.banner__contact{
+.banner__contact {
   @media (max-width: $breakpointTablet) {
     position: unset;
     width: 100%;
     text-align: right;
   }
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
@@ -64,14 +66,18 @@ position: absolute;
     font-family: $fontTertiary;
     font-size: 2rem;
   }
-.banner__contact__list--strong {
-  font-weight: 700;
-}
+
+  &__list--strong {
+    font-weight: 700;
+  }
+
   &__list {
     list-style: none;
-    a{
+    position: relative;
+    a {
       text-decoration: none;
       color: #000000;
+
       &:hover {
         background-image: $gradient;
         background-clip: border-box;
@@ -81,8 +87,37 @@ position: absolute;
       }
     }
   }
+
+  .email {
+    border-radius: 1rem;
+  }
 }
 
-.email {
-  border-radius: 1rem;
+.banner__contact__environment {
+  box-shadow: $boxShadowArticle;
+  border-radius: $borderRadiusArticles;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 120%;
+  padding: 3rem;
+  top: -7rem;
+  position: absolute;
+  transform: translateX(105%);
+  transition: All 800ms ease-out;
+  background: $translateBackground;
+
+}
+
+.environment {
+  cursor: pointer;
+  &:hover {
+    .banner__contact__environment {
+
+      @media(max-width: $breakpointTablet) {
+        transform: translateX(-10%);
+      }
+      transform: translateX(-15%);
+
+    }
+  }
 }

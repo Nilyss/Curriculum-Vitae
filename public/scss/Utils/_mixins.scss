@@ -23,3 +23,39 @@ font-family:  $fontPrimary;
     transition: all 400ms ease-out;
   }
 }
+
+@mixin h2GradientHover {
+  &:hover {
+    animation: boxShadowHover 300ms ease-out forwards;
+    transform: scale(1.05);
+    transition: all 400ms ease-out;
+    @include scaleHover;
+    h2 {
+      background-image: $gradient;
+      background-clip: border-box;
+      background-size: 100% auto;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      transform: scale(1.1);
+      transition: all 400ms ease-out;
+    }
+  }
+}
+
+@mixin cardBody {
+  @media(max-width: $breakpointTablet) {
+    width: 100%;
+  }
+  @media(min-width: $breakpointDesktop) {
+    @include  h2GradientHover
+  }
+  display: flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  background: $articlesBackground;
+  border-radius: $borderRadiusArticles;
+  box-shadow: $boxShadowArticle;
+  transform: scale(1);
+  transition: 200ms ease-in;
+}
