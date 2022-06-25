@@ -32,7 +32,7 @@ body {
     position: fixed;
     z-index: 9998;
     width: .5rem;
-    height: 5rem;
+    height: 3.5rem;
     border-radius: .5rem;
     background: $gradient;
     pointer-events: none;
@@ -42,23 +42,23 @@ body {
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  top: 39%;
-  left: 40%;
+  top: 37%;
+  left: 37.5%;
   animation: loaderBackgroundFadeOut 2500ms forwards;
 }
 
   .loader__wave1 {
-    top: 45%;
+    top: 47%;
     left: 50%;
     animation: waveLoader 2000ms  both 400ms, loaderBackgroundFadeOut 2500ms forwards;
   }
   .loader__wave2 {
-    top: 45%;
+    top: 47%;
     left: 50.5%;
     animation: waveLoader 2000ms  both 200ms , loaderBackgroundFadeOut 2500ms forwards;
   }
   .loader__wave3{
-    top: 45%;
+    top: 47%;
     left: 49.5%;
     animation: waveLoader 2000ms  both, loaderBackgroundFadeOut 2500ms forwards;
   }
