@@ -3,82 +3,75 @@
 @import '../Utils/_keyframes.scss';
 
 main {
-  max-width: 1440px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: auto;
   flex-flow: wrap;
   width: 100%;
-}
-
-h2 {
-  margin-left: 4rem;
-  @include fontTitle;
-  font-weight: 700;
-  font-size: 1.8rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  transform: scale(1);
-  transition: 200ms ease-in;
-}
-
-h3 {
-  @include  fontSubtitle;
-  font-weight: 700;
-  font-size: 1.3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-li {
-  @include  fontArticle;
-  margin-bottom: 1.5rem;
-  line-height: 1.5rem;
-  display: flex;
-  flex-flow: column;
-  padding-right: 1rem;
-}
-
-
-strong {
-  font-weight: 700;
-}
-
-em {
-  font-style: oblique;
-}
-
-.training, .experience {
-@include cardMediaQueries;
-  width: 48%;
-}
-
- .softSkills {
-   @include cardMediaQueries;
-  width: 48%;
- }
-
-  .interest {
-    @include cardMediaQueries;
-  width: 48%;
+  overflow: hidden;
+  ul {
+    padding-inline-start: 0;
+    li {
+      list-style: none;
+      padding-inline-start: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 2.5rem;
+    }
   }
-
-  .language {
-    display: flex;
-    justify-content: center;
-
-    @include cardMediaQueries;
+  h2 {
     width: 100%;
-    ul {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    &__logo {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
+    @include fontTitle;
+    font-size: 3rem;
+  }
+  article {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 3rem;
+    background: url("../asset/articlebg.webp") no-repeat fixed;
+    border-radius: $borderRadiusArticles;
+    box-shadow: $boxShadowArticle;
+    @include fontArticle;
+    font-size: 1.5rem;
+  }
+}
+
+.mainNav{
+  position: fixed;
+  top: 23rem;
+  left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 9996;
+
+  &__list {
+    padding-inline-start: 0;
+    display: flex;
+    flex-flow: column;
+    &__button {
+      background: url("../asset/articlebg.webp") no-repeat fixed;
+      cursor: pointer;
+      border-radius: .5rem;
+      padding: 1rem;
+      border: none;
+      box-shadow: $boxShadow;
+      @include scaleHover;
+      @include fontTitle;
+      font-size: 2.5rem;
+
+      &:hover {
+        @include buttonGradientHover;
+        animation: boxShadowHover 300ms forwards;
+      }
     }
   }
+}
+
+.training, .experience, .language, .softSkills, .interest {
+  transform: translateX(200%);
+  max-width: 1440px;
+  width: 80%;
+  margin-left: 30rem;
+  margin-right: 3rem;
+}
+
 
