@@ -8,6 +8,61 @@
 
 body {
   background: url("../asset/bg.webp") no-repeat fixed;
+  animation: overflowScrollingLoader 3000ms forwards;
+
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $loaderBackground;
+      z-index: 9997;
+      animation: loaderTranslate 3000ms forwards;
+    }
+  }
+
+  .loader__wave1, .loader__wave2, .loader__wave3 {
+    position: fixed;
+    z-index: 9998;
+    width: .5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    background: $gradient;
+    pointer-events: none;
+  }
+
+.loader__icon {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  top: 39%;
+  left: 40%;
+  animation: loaderBackgroundFadeOut 2500ms forwards;
+}
+
+  .loader__wave1 {
+    top: 45%;
+    left: 50%;
+    animation: waveLoader 2000ms  both 400ms, loaderBackgroundFadeOut 2500ms forwards;
+  }
+  .loader__wave2 {
+    top: 45%;
+    left: 50.5%;
+    animation: waveLoader 2000ms  both 200ms , loaderBackgroundFadeOut 2500ms forwards;
+  }
+  .loader__wave3{
+    top: 45%;
+    left: 49.5%;
+    animation: waveLoader 2000ms  both, loaderBackgroundFadeOut 2500ms forwards;
+  }
+
 }
 
 #backToTopBtn {
@@ -15,7 +70,7 @@ body {
   position: fixed;
   bottom: 1rem;
   right: 2rem;
-  z-index: 9999;
+  z-index: 9996;
   border: none;
   outline: none;
   cursor: pointer;
@@ -29,7 +84,7 @@ body {
   position: fixed;
   bottom: 1rem;
   left: 2rem;
-  z-index: 9999;
+  z-index: 9996;
   border: none;
   outline: none;
   cursor: pointer;

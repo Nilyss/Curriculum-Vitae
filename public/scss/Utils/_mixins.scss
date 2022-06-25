@@ -43,6 +43,9 @@ font-family:  $fontPrimary;
 }
 
 @mixin cardMediaQueries {
+  @media(min-width: 320px) {
+    width: 100%;
+  }
   @media(max-width: $breakpointTablet) {
     width: 100%;
     &:hover {
@@ -70,4 +73,21 @@ font-family:  $fontPrimary;
   box-shadow: $boxShadowArticle;
   transform: scale(1);
   transition: 200ms ease-in;
+}
+
+@mixin loaderSquare {
+  position: fixed;
+  z-index: 9999;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: $gradient;
+}
+
+@mixin loaderDot {
+  position: fixed;
+  z-index: 9999;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  background: $gradient;
 }
