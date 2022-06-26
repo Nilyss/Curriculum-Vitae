@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #ff9966, #ff5e62);
+  background: url("../asset/articlebg.webp") no-repeat fixed;
   animation: overflowScrollingLoader 3000ms forwards;
 
   .loader {
@@ -50,17 +50,17 @@ body {
   .loader__wave1 {
     top: 47%;
     left: 50%;
-    animation: waveLoader 2000ms  both 400ms, loaderBackgroundFadeOut 2500ms forwards;
+    animation: waveLoader 1250ms  both 400ms, loaderBackgroundFadeOut 2500ms forwards;
   }
   .loader__wave2 {
     top: 47%;
     left: 50.5%;
-    animation: waveLoader 2000ms  both 200ms , loaderBackgroundFadeOut 2500ms forwards;
+    animation: waveLoader 1200ms  both 200ms , loaderBackgroundFadeOut 2500ms forwards;
   }
   .loader__wave3{
     top: 47%;
     left: 49.5%;
-    animation: waveLoader 2000ms  both, loaderBackgroundFadeOut 2500ms forwards;
+    animation: waveLoader 1000ms  both, loaderBackgroundFadeOut 2500ms forwards;
   }
 
 }

@@ -3,48 +3,35 @@
 
 footer {
   background: url("../asset/articlebg.webp") no-repeat fixed;
-  border-radius: 15px 15px 0 0;
-
+  padding: 0 20rem 0 20rem ;
   nav {
+    margin: 2rem;
+    h2{
+      margin-left: 8rem;
+      width: 100%;
+      @include fontTitle;
+      font-size: 2rem;
+    }
     ul {
-      margin: 5.5rem 0 0 0 ;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
-      a{
-        @include fontArticle;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        &:hover {
-          background-image: $gradient;
-          background-clip: border-box;
-          background-size: 300% auto;
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          transform: scale(1.1);
-          transition: all 400ms ease-out;
+      li {
+        @include  fontArticle;
+        list-style: none;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: $fontColorPrimary;
+        }
+        img {
+          width: 90px;
+          height: 90px;
+          margin-right: 1rem;
         }
       }
     }
   }
-}
-
-h2 {
-  margin: 1rem 0 0 0 ;
-  padding: 3rem;
-  width: 100%;
-}
-
-.footerNav {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.navIcon {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
 }

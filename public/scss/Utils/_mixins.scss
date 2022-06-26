@@ -3,6 +3,7 @@
 @mixin fontTitle {
   font-family: $fontTertiary;
   color: $fontColorPrimary;
+  font-weight: 400;
 }
 
 @mixin fontArticle {
@@ -24,13 +25,7 @@ font-family:  $fontPrimary;
   }
 }
 
-@mixin h2GradientHover {
-  &:hover {
-    animation: boxShadowHover 300ms ease-out forwards;
-    transform: scale(1.05);
-    transition: all 400ms ease-out;
-    @include scaleHover;
-    h2 {
+@mixin buttonGradientHover {
       background-image: $gradient;
       background-clip: border-box;
       background-size: 100% auto;
@@ -38,8 +33,6 @@ font-family:  $fontPrimary;
       -webkit-background-clip: text;
       transform: scale(1.1);
       transition: all 400ms ease-out;
-    }
-  }
 }
 
 @mixin cardMediaQueries {
@@ -59,9 +52,6 @@ font-family:  $fontPrimary;
         transition: all 400ms ease-out;
       }
     }
-  }
-  @media(min-width: $breakpointDesktop) {
-    @include  h2GradientHover
   }
   display: flex;
   justify-content: center;
@@ -90,4 +80,9 @@ font-family:  $fontPrimary;
   height: 2.5rem;
   border-radius: 2rem;
   background: $gradient;
+}
+
+@mixin sectionTranslate {
+  transition: All 800ms ease-out;
+  transform: translateX(105%);
 }

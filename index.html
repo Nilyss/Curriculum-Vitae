@@ -30,18 +30,18 @@
     />
   </head>
   <body>
-  <div class="loader">
-    <lord-icon
-            class="loader__icon"
-            src="https://cdn.lordicon.com/xjovhxra.json"
-            trigger="loop"
-            colors="primary:#e2465b,secondary:#c9227d"
-            style="width:25%;height:25%">
-    </lord-icon>
-   <span class="loader__wave1"></span>
-    <span class="loader__wave2"></span>
-    <span class="loader__wave3"></span>
-  </div>
+<!--  <div class="loader">-->
+<!--    <lord-icon-->
+<!--            class="loader__icon"-->
+<!--            src="https://cdn.lordicon.com/xjovhxra.json"-->
+<!--            trigger="loop"-->
+<!--            colors="primary:#e2465b,secondary:#c9227d"-->
+<!--            style="width:25%;height:25%">-->
+<!--    </lord-icon>-->
+<!--   <span class="loader__wave1"></span>-->
+<!--    <span class="loader__wave2"></span>-->
+<!--    <span class="loader__wave3"></span>-->
+<!--  </div>-->
     <header>
       <figure>
         <a href="./public/asset/profilePicture.webp">
@@ -110,7 +110,16 @@
         </nav>
     </header>
     <main>
-      <section class = "training">
+      <nav class="mainNav">
+        <ul class="mainNav__list">
+          <li><button onclick="trainingTranslate()" id="trainingButton" title="Formations" class="mainNav__list__button">Formations</button></li>
+          <li><button onclick="experiencesTranslate()" id="experiencesButton" title="&#201;xperiences" class="mainNav__list__button">&#201;xperiences</button></li>
+          <li><button onclick="hardSkillsTranslate()" id="hardSkillsButton" title="Hard Skills" class="mainNav__list__button">Hard Skills</button></li>
+          <li><button onclick="softSkillsTranslate()" id="softSkillsButton" title="Soft Skills" class="mainNav__list__button">Soft Skills</button></li>
+          <li><button onclick="interestTranslate()" id="interestButton" title="Centre d'intérêts" class="mainNav__list__button">Centre d'intérêts</button></li>
+        </ul>
+      </nav>
+      <section id="trainingCard"  class = "training">
         <article class="training__card">
           <h2>Formations</h2>
             <ul>
@@ -121,8 +130,8 @@
             </ul>
         </article>
       </section>
-      <section class="experience">
-        <article>
+      <section id="experienceCard" class="experience">
+        <article class="experience__card">
           <h2>&#201;xperiences professionnelles notables</h2>
           <ul>
             <li><strong>2021 - 2022 <em>SITEL </em></strong><em>Chargé de clientèle pour le compte de ENGIE - DTR </em><br>Aide à la navigation web de client via outils de contrôle à distance afin d'aider à la digitalisation de la clientele depuis un service web. Gestion de facturation </li>
@@ -132,8 +141,8 @@
           </ul>
         </article>
       </section>
-      <section class="language">
-        <article>
+      <section id="languageCard" class="language">
+        <article class="language_card">
           <h2>Langages connus</h2>
           <h3>Front-end</h3>
           <ul>
@@ -150,9 +159,9 @@
           </ul>
         </article>
       </section>
-      <section class="softSkills">
-        <article>
-          <h2 class="test">Soft Skills</h2>
+      <section id="softSkillsCard" class="softSkills">
+        <article class="softSkills__card">
+          <h2>Soft Skills</h2>
           <ul>
             <li>Gestion du stress</li>
             <li>Gestion du temps</li>
@@ -162,8 +171,8 @@
           </ul>
         </article>
       </section>
-      <section class="interest">
-        <article>
+      <section id="interestCard" class="interest">
+        <article class="interest_card">
           <h2>Centre d'intérêts</h2>
           <ul>
             <li>Technologies (Machine Learning, Hardware, Software...)</li>
@@ -182,7 +191,6 @@
                 trigger="loop"
                 colors="primary:#121331,secondary:#e83a30"
                 style="width:60px;height:60px">
-
         </lord-icon>
         </a>
       </button>
@@ -199,8 +207,8 @@
     </main>
     <footer>
       <nav>
+        <h2>Nicolas DECRESSAC</h2>
         <ul>
-          <h2>Nicolas DECRESSAC</h2>
           <li class="footerNav">
             <a href="#contact">
             <lord-icon
@@ -231,6 +239,7 @@
 <!--  <script src="https://kit.fontawesome.com/65f76cf6ae.js" crossorigin="anonymous"></script>-->
     <!-- lord icon library -->
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="public/js/button.js"></script>
     <script src="public/js/script.js"></script>
   </body>
 </html>

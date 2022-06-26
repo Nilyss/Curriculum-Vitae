@@ -10,7 +10,6 @@ header {
     flex-wrap: wrap;
   }
   overflow: hidden;
-
   margin-bottom: 5rem;
   width: 100%;
   display: flex;
@@ -73,6 +72,7 @@ header {
 
   &__list {
     margin: -1.5rem;
+    padding-right: 3rem;
     list-style: none;
     position: relative;
     a {
@@ -104,12 +104,12 @@ header {
   flex-flow: column nowrap;
   width: 120%;
   padding: 3rem;
-  top: -7rem;
+  top: -6.9rem;
   position: absolute;
   transform: translateX(105%);
-  transition: All 800ms ease-out;
+  transition: All 300ms ease-out;
   background: url("../asset/articlebg.webp") no-repeat fixed;
-;
+  list-style: none;
 }
 
 .environment {
