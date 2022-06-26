@@ -3,6 +3,9 @@
 @import '../Utils/_keyframes.scss';
 
 *{
+  @media (max-width: $breakpointMobile) {
+    max-width: 768px;
+  }
   box-sizing: border-box;
 }
 

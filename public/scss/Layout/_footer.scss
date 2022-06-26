@@ -2,7 +2,7 @@
 @import "../Utils/mixins.scss";
 
 footer {
-  @media(min-width: $breakpointMobile) {
+  @media(max-width: $breakpointMobile) {
     padding: unset;
     font-size: 1.5rem;
   }
@@ -11,7 +11,7 @@ footer {
   nav {
     margin: 2rem;
     h2{
-      @media(min-width: $breakpointMobile) {
+      @media(max-width: $breakpointMobile) {
         margin-left: 1rem;
       }
       margin-left: 8rem;
@@ -20,7 +20,7 @@ footer {
       font-size: 2rem;
     }
     ul {
-      @media(min-width: $breakpointMobile) {
+      @media(max-width: $breakpointMobile) {
         flex-flow: column;
         align-items: flex-start;
         padding-inline-start: 0;

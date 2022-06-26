@@ -27,7 +27,7 @@ main {
   }
 
   article {
-    @media(min-width: $breakpointMobile) {
+    @media(max-width: $breakpointMobile) {
       width: 100%;
       margin: auto;
       margin-bottom: 2rem;
@@ -46,7 +46,7 @@ main {
 }
 .mainNav{
 
-  @media (min-width: $breakpointMobile) {
+  @media (max-width: $breakpointMobile) {
   position: fixed;
     top: 40rem;
 }
@@ -61,7 +61,7 @@ main {
     padding-inline-start: 0;
     display: flex;
     flex-flow: column;
-    @media (min-width: $breakpointMobile) {
+    @media (max-width: $breakpointMobile) {
         display: none;
     }
     &__button {
@@ -84,8 +84,9 @@ main {
 }
 
 .training, .experience, .language, .softSkills, .interest {
-  @media(min-width: $breakpointMobile) {
+  @media(max-width: $breakpointMobile) {
     margin-left: 5%;
+    margin: auto;
     transform: translateX(0);
     max-height: unset;
   }
@@ -115,7 +116,7 @@ main {
     object-fit: contain;
   }
   ul {
-    @media(min-width: $breakpointMobile) {
+    @media(max-width: $breakpointMobile) {
       flex-flow: column;
       align-items: center;
     }
