@@ -3,12 +3,13 @@
 @import '../Utils/_keyframes.scss';
 
 main {
+  overflow: hidden;
   display: flex;
   justify-content: flex-start;
   margin: auto;
   flex-flow: wrap;
   width: 100%;
-  overflow: hidden;
+  min-height: 30rem;
   ul {
     padding-inline-start: 0;
     li {
@@ -22,9 +23,11 @@ main {
     width: 100%;
     @include fontTitle;
     font-size: 3rem;
+    padding: 2rem;
   }
 
   article {
+    overflow: hidden;
     display: flex;
     flex-flow: column;
     margin-bottom: 3rem;
@@ -68,11 +71,14 @@ main {
 }
 
 .training, .experience, .language, .softSkills, .interest {
-  transform: translateX(200%);
   max-width: 1440px;
-  width: 80%;
-  margin-left: 30rem;
-  margin-right: 3rem;
+  width: 100%;
+  transform: translateX(100%);
+  max-height: 0;
+  margin-left: 40%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .language {
@@ -90,5 +96,4 @@ main {
     justify-content: space-around;
   }
 }
-
 
