@@ -79,17 +79,3 @@ body {
   box-shadow: $boxShadowArticle;
   @include scaleHover;
 }
-
-#gitHubLink {
-  position: fixed;
-  bottom: 1rem;
-  left: 2rem;
-  z-index: 9996;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: $borderRadiusArticles;
-  box-shadow: $boxShadowArticle;
-  @include scaleHover;
-}

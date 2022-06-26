@@ -27,6 +27,11 @@ main {
   }
 
   article {
+    @media(max-width: $breakpointMobile) {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
     overflow: hidden;
     display: flex;
     flex-flow: column;
@@ -38,8 +43,12 @@ main {
     font-size: 1.5rem;
   }
 }
-
 .mainNav{
+
+  @media (max-width: $breakpointMobile) {
+  position: fixed;
+    top: 40rem;
+}
   position: fixed;
   top: 23rem;
   left: 2rem;
@@ -51,6 +60,9 @@ main {
     padding-inline-start: 0;
     display: flex;
     flex-flow: column;
+    @media (max-width: $breakpointMobile) {
+display: none;
+    }
     &__button {
       background: url("../asset/articlebg.webp") no-repeat fixed;
       cursor: pointer;
@@ -60,7 +72,7 @@ main {
       box-shadow: $boxShadow;
       @include scaleHover;
       @include fontTitle;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
 
       &:hover {
         @include buttonGradientHover;
@@ -71,6 +83,11 @@ main {
 }
 
 .training, .experience, .language, .softSkills, .interest {
+  @media(max-width: $breakpointMobile) {
+    margin-left: 5%;
+    transform: translateX(0);
+    max-height: unset;
+  }
   max-width: 1440px;
   width: 100%;
   transform: translateX(100%);
@@ -92,6 +109,10 @@ main {
     object-fit: contain;
   }
   ul {
+    @media(max-width: $breakpointMobile) {
+      flex-flow: column;
+      align-items: center;
+    }
     display: flex;
     justify-content: space-around;
   }
