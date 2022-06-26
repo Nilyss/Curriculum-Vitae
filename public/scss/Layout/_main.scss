@@ -23,6 +23,7 @@ main {
     @include fontTitle;
     font-size: 3rem;
   }
+
   article {
     display: flex;
     flex-flow: column;
@@ -72,6 +73,22 @@ main {
   width: 80%;
   margin-left: 30rem;
   margin-right: 3rem;
+}
+
+.language {
+
+  h3 {
+    margin-left: 3rem;
+  }
+  img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 
