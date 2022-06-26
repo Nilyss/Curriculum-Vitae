@@ -3,10 +3,7 @@
 @import "../Utils/_keyframes.scss";
 
 header {
-  @media (max-width: $breakpointTablet) {
-    flex-wrap: nowrap;
-  }
-  @media (max-width: $breakpointMobile) {
+  @media (min-width: $breakpointMobile) {
     flex-wrap: wrap;
   }
   overflow: hidden;
@@ -19,8 +16,12 @@ header {
   border-radius: 0 0 15px 15px;
   box-shadow: $boxShadow;
   @include fontArticle;
+  font-size: 1.5rem;
 
   .profilePicture {
+    @media (min-width: $breakpointMobile) {
+      margin-top: -30rem;
+    }
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -30,7 +31,10 @@ header {
   }
 
   .banner {
-    @media (max-width: $breakpointTablet) {
+    @media (min-width: $breakpointMobile) {
+      margin-top: -8rem;
+    }
+    @media (min-width: $breakpointTablet) {
       position: unset;
       width: fit-content;
       text-align: right;
@@ -50,7 +54,10 @@ header {
 }
 
 .banner__contact {
-  @media (max-width: $breakpointTablet) {
+  @media (min-width: $breakpointMobile) {
+    margin-top: 30rem;
+  }
+  @media (min-width: $breakpointTablet) {
     position: unset;
     width: 100%;
     text-align: right;
@@ -95,7 +102,10 @@ header {
 }
 
 .banner__contact__environment {
-  @media (max-width: $breakpointTablet) {
+  @media (min-width: $breakpointMobile) {
+    top: -15rem;
+  }
+  @media (min-width: $breakpointTablet) {
     top: -15rem;
   }
   box-shadow: $boxShadowArticle;
@@ -117,7 +127,7 @@ header {
   &:hover {
     .banner__contact__environment {
 
-      @media(max-width: $breakpointTablet) {
+      @media(min-width: $breakpointTablet) {
         transform: translateX(-10%);
       }
       transform: translateX(-15%);

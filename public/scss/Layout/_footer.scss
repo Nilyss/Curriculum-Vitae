@@ -2,15 +2,16 @@
 @import "../Utils/mixins.scss";
 
 footer {
-  @media(max-width: $breakpointMobile) {
+  @media(min-width: $breakpointMobile) {
     padding: unset;
+    font-size: 1.5rem;
   }
   background: url("../asset/articlebg.webp") no-repeat fixed;
   padding: 0 20rem 0 20rem ;
   nav {
     margin: 2rem;
     h2{
-      @media(max-width: $breakpointMobile) {
+      @media(min-width: $breakpointMobile) {
         margin-left: 1rem;
       }
       margin-left: 8rem;
@@ -19,7 +20,7 @@ footer {
       font-size: 2rem;
     }
     ul {
-      @media(max-width: $breakpointMobile) {
+      @media(min-width: $breakpointMobile) {
         flex-flow: column;
         align-items: flex-start;
         padding-inline-start: 0;
@@ -49,6 +50,8 @@ footer {
           justify-content: center;
           text-decoration: none;
           color: $fontColorPrimary;
+
+
         }
         img {
           width: 90px;

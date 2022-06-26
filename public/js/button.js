@@ -1,7 +1,7 @@
 // Init width value
 
 let elementTranslate;
-elementTranslate = "translateX(100%)";
+elementTranslate = "translateX(200%)";
 
 let elementMaxHeight;
 elementMaxHeight = "0";
@@ -16,7 +16,7 @@ let interestButton = document.querySelector("#interestCard");
 
 function trainingTranslate() {
   trainingButton.style.transform = `${elementTranslate}`;
-  if (`${elementTranslate}` === "translateX(100%)") {
+  if (`${elementTranslate}` === "translateX(200%)") {
     trainingButton.style.transition = "all 500ms ease-out";
     trainingButton.style.transform = "translateX(0)";
     trainingButton.style.maxHeight = "10000px";
@@ -24,16 +24,16 @@ function trainingTranslate() {
     elementMaxHeight = "fit-content";
   } else if (`${elementTranslate}` === "translateX(0)") {
     trainingButton.style.transition = "all 500ms ease-out";
-    trainingButton.style.transform = "translateX(100%)";
+    trainingButton.style.transform = "translateX(200%)";
     trainingButton.style.maxHeight = "0";
-    elementTranslate = "translateX(100%)";
+    elementTranslate = "translateX(200%)";
     elementMaxHeight = "0";
   }
 }
 
 function experiencesTranslate() {
   experienceButton.style.transform = `${elementTranslate}`;
-  if (`${elementTranslate}` === "translateX(100%)") {
+  if (`${elementTranslate}` === "translateX(200%)") {
     experienceButton.style.transition = "all 500ms ease-out";
     experienceButton.style.transform = "translateX(0)";
     experienceButton.style.maxHeight = "10000px";
@@ -41,16 +41,16 @@ function experiencesTranslate() {
     elementMaxHeight = "fit-content";
   } else if (`${elementTranslate}` === "translateX(0)") {
     experienceButton.style.transition = "all 500ms ease-out";
-    experienceButton.style.transform = "translateX(100%)";
+    experienceButton.style.transform = "translateX(200%)";
     experienceButton.style.maxHeight = "0";
-    elementTranslate = "translateX(100%)";
+    elementTranslate = "translateX(200%)";
     elementMaxHeight = "0";
   }
 }
 
 function hardSkillsTranslate() {
   hardSkillsButton.style.transform = `${elementTranslate}`;
-  if (`${elementTranslate}` === "translateX(100%)") {
+  if (`${elementTranslate}` === "translateX(200%)") {
     hardSkillsButton.style.transition = "all 500ms ease-out";
     hardSkillsButton.style.transform = "translateX(0)";
     hardSkillsButton.style.maxHeight = "10000px";
@@ -58,16 +58,16 @@ function hardSkillsTranslate() {
     elementMaxHeight = "fit-content";
   } else if (`${elementTranslate}` === "translateX(0)") {
     hardSkillsButton.style.transition = "all 500ms ease-out";
-    hardSkillsButton.style.transform = "translateX(100%)";
+    hardSkillsButton.style.transform = "translateX(200%)";
     hardSkillsButton.style.maxHeight = "0";
-    elementTranslate = "translateX(100%)";
+    elementTranslate = "translateX(200%)";
     elementMaxHeight = "0";
   }
 }
 
 function softSkillsTranslate() {
   softSkillsButton.style.transform = `${elementTranslate}`;
-  if (`${elementTranslate}` === "translateX(100%)") {
+  if (`${elementTranslate}` === "translateX(200%)") {
     softSkillsButton.style.transition = "all 500ms ease-out";
     softSkillsButton.style.transform = "translateX(0)";
     softSkillsButton.style.maxHeight = "10000px";
@@ -75,16 +75,16 @@ function softSkillsTranslate() {
     elementMaxHeight = "fit-content";
   } else if (`${elementTranslate}` === "translateX(0)") {
     softSkillsButton.style.transition = "all 500ms ease-out";
-    softSkillsButton.style.transform = "translateX(100%)";
+    softSkillsButton.style.transform = "translateX(200%)";
     softSkillsButton.style.maxHeight = "0";
-    elementTranslate = "translateX(100%)";
+    elementTranslate = "translateX(200%)";
     elementMaxHeight = "0";
   }
 }
 
 function interestTranslate() {
   interestButton.style.transform = `${elementTranslate}`;
-  if (`${elementTranslate}` === "translateX(100%)") {
+  if (`${elementTranslate}` === "translateX(200%)") {
     interestButton.style.transition = "all 500ms ease-out";
     interestButton.style.transform = "translateX(0)";
     interestButton.style.maxHeight = "10000px";
@@ -92,9 +92,9 @@ function interestTranslate() {
     elementMaxHeight = "fit-content";
   } else if (`${elementTranslate}` === "translateX(0)") {
     interestButton.style.transition = "all 500ms ease-out";
-    interestButton.style.transform = "translateX(100%)";
+    interestButton.style.transform = "translateX(200%)";
     interestButton.style.maxHeight = "0";
-    elementTranslate = "translateX(100%)";
+    elementTranslate = "translateX(200%)";
     elementMaxHeight = "0";
   }
 }
