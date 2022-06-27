@@ -1,4 +1,4 @@
-@import '../Utils/variables';
+@import "../Utils/variables";
 
 @mixin fontTitle {
   font-family: $fontTertiary;
@@ -7,12 +7,12 @@
 }
 
 @mixin fontArticle {
-font-family: $fontSecondary;
+  font-family: $fontSecondary;
   color: $fontColorPrimary;
 }
 
 @mixin fontSubtitle {
-font-family:  $fontPrimary;
+  font-family: $fontPrimary;
   color: $fontColorPrimary;
 }
 
@@ -26,20 +26,20 @@ font-family:  $fontPrimary;
 }
 
 @mixin buttonGradientHover {
-      background-image: $gradient;
-      background-clip: border-box;
-      background-size: 100% auto;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      transform: scale(1.1);
-      transition: all 400ms ease-out;
+  background-image: $gradient;
+  background-clip: border-box;
+  background-size: 100% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transform: scale(1.1);
+  transition: all 400ms ease-out;
 }
 
 @mixin cardMediaQueries {
-  @media(min-width: 320px) {
+  @media (min-width: 320px) {
     width: 100%;
   }
-  @media(max-width: $breakpointTablet) {
+  @media (max-width: $breakpointTablet) {
     width: 100%;
     &:hover {
       h2 {

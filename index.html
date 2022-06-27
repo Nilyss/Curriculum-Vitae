@@ -2,17 +2,17 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DECRESSAC Nicolas Curriculum Vitae</title>
 
     <!-- Import Normalizer for uniform browser render -->
     <link rel="StyleSheet" href="./public/scss/Vendors/normalize.css" />
 
     <!--     Import Styles compiled by Sass-->
-    <link rel="StyleSheet" href="./public/css/styles.css" />
+    <!--<link rel="StyleSheet" href="./public/css/styles.css" />-->
 
     <!--     Import Styles auto-prefixed-->
-    <!--    <link rel="StyleSheet" href="./public/css/prefixed/styles.css">-->
+    <link href="./public/css/prefixed/styles.css" rel="StyleSheet" />
 
     <!-- Import Cascadia Code font -->
     <link
@@ -31,18 +31,19 @@
     />
   </head>
   <body>
-  <div class="loader">
-    <lord-icon
-            class="loader__icon"
-            src="https://cdn.lordicon.com/xjovhxra.json"
-            trigger="loop"
-            colors="primary:#e2465b,secondary:#c9227d"
-            style="width:25%;height:25%">
-    </lord-icon>
-   <span class="loader__wave1"></span>
-    <span class="loader__wave2"></span>
-    <span class="loader__wave3"></span>
-  </div>
+    <div class="loader">
+      <lord-icon
+        class="loader__icon"
+        src="https://cdn.lordicon.com/xjovhxra.json"
+        trigger="loop"
+        colors="primary:#e2465b,secondary:#c9227d"
+        style="width: 25%; height: 25%"
+      >
+      </lord-icon>
+      <span class="loader__wave1"></span>
+      <span class="loader__wave2"></span>
+      <span class="loader__wave3"></span>
+    </div>
     <header>
       <figure>
         <a href="./public/asset/profilePicture.webp">
@@ -55,90 +56,186 @@
         </a>
       </figure>
       <section class="banner">
-      <h1>Nicolas DECRESSAC</h1>
-      <p><em>Développeur web</em></p>
+        <h1>Nicolas DECRESSAC</h1>
+        <p><em>Développeur web</em></p>
       </section>
       <nav id="contact" class="banner__contact">
         <h2>Contact</h2>
-          <ul>
-            <li class="banner__contact__list">
-              <p>
-                <lord-icon
-                        src="https://cdn.lordicon.com/gmzxduhd.json"
-                        trigger="loop"
-                        colors="primary:#121331,secondary:#e83a30"
-                        style="width:40px;height:40px">
-                </lord-icon>
-                2 allée Olympe de Gouges, appt. 11, 17180 PERIGNY</p>
-            </li>
-            <li class="banner__contact__list">
-              <p>
-                <lord-icon
-                        src="https://cdn.lordicon.com/cnbtojmk.json"
-                        trigger="loop"
-                        colors="primary:#000000,secondary:#e83a30"
-                        style="width:50px;height:50px">
-                </lord-icon>
-                06 95 59 37 54</p>
-            </li>
-            <li class="banner__contact__list email">
-              <a href="mailto:decressac.nicolas@gmail.com">
-                <lord-icon
-                        src="https://cdn.lordicon.com/tkgyrmwc.json"
-                        trigger="loop"
-                        colors="primary:#e83a30,secondary:#08a88a"
-                        style="width:50px;height:50px">
-                </lord-icon>
-                decressac.nicolas@gmail.com</a>
-            </li>
-            <li class="banner__contact__list environment">
-              <p>
-                <lord-icon
-                        src="https://cdn.lordicon.com/qhgmphtg.json"
-                        trigger="loop"
-                        colors="primary:#121331,secondary:#e83a30"
-                        style="width:50px;height:50px">
-                </lord-icon>
-                <strong class="banner__contact__list--strong">Environment de développement</strong>
-              </p>
-                <ul class="banner__contact__environment">
-                  <li><strong>Système d'exploitation </strong>Ubuntu 22.04 LTS (possède une partition Windows 11)</li>
-                  <li><strong>IDE </strong>JetBrains - IntelliJ IDEA Ultimate Edition (WebStorm et VS:Code installé)</li>
-                  <li><strong>Terminal </strong>Laptop Lenovo LEGION 5 17ACH6H-789</li>
-                </ul>
-            </li>
-          </ul>
-        </nav>
+        <ul>
+          <li class="banner__contact__list">
+            <p>
+              <lord-icon
+                src="https://cdn.lordicon.com/gmzxduhd.json"
+                trigger="loop"
+                colors="primary:#121331,secondary:#e83a30"
+                style="width: 40px; height: 40px"
+              >
+              </lord-icon>
+              2 allée Olympe de Gouges, appt. 11, 17180 PERIGNY
+            </p>
+          </li>
+          <li class="banner__contact__list">
+            <p>
+              <lord-icon
+                src="https://cdn.lordicon.com/cnbtojmk.json"
+                trigger="loop"
+                colors="primary:#000000,secondary:#e83a30"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+              06 95 59 37 54
+            </p>
+          </li>
+          <li class="banner__contact__list email">
+            <a href="mailto:decressac.nicolas@gmail.com">
+              <lord-icon
+                src="https://cdn.lordicon.com/tkgyrmwc.json"
+                trigger="loop"
+                colors="primary:#e83a30,secondary:#08a88a"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+              decressac.nicolas@gmail.com</a
+            >
+          </li>
+          <li class="banner__contact__list environment">
+            <p>
+              <lord-icon
+                src="https://cdn.lordicon.com/qhgmphtg.json"
+                trigger="loop"
+                colors="primary:#121331,secondary:#e83a30"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+              <strong class="banner__contact__list--strong"
+                >Environment de développement</strong
+              >
+            </p>
+            <ul class="banner__contact__environment">
+              <li>
+                <strong>Système d'exploitation </strong>Ubuntu 22.04 LTS
+                (possède une partition Windows 11)
+              </li>
+              <li>
+                <strong>IDE </strong>JetBrains - IntelliJ IDEA Ultimate Edition
+                (WebStorm et VS:Code installé)
+              </li>
+              <li>
+                <strong>Terminal </strong>Laptop Lenovo LEGION 5 17ACH6H-789
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <nav class="mainNav">
         <ul class="mainNav__list">
-          <li><button onclick="trainingTranslate()" id="trainingButton" title="Formations" class="mainNav__list__button">Formations</button></li>
-          <li><button onclick="experiencesTranslate()" id="experiencesButton" title="&#201;xperiences" class="mainNav__list__button">&#201;xperiences</button></li>
-          <li><button onclick="hardSkillsTranslate()" id="hardSkillsButton" title="Hard Skills" class="mainNav__list__button">Hard Skills</button></li>
-          <li><button onclick="softSkillsTranslate()" id="softSkillsButton" title="Soft Skills" class="mainNav__list__button">Soft Skills</button></li>
-          <li><button onclick="interestTranslate()" id="interestButton" title="Centre d'intérêts" class="mainNav__list__button">Centre d'intérêts</button></li>
+          <li>
+            <button
+              onclick="trainingTranslate()"
+              id="trainingButton"
+              title="Formations"
+              class="mainNav__list__button"
+            >
+              Formations
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="experiencesTranslate()"
+              id="experiencesButton"
+              title="&#201;xperiences"
+              class="mainNav__list__button"
+            >
+              &#201;xperiences
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="hardSkillsTranslate()"
+              id="hardSkillsButton"
+              title="Hard Skills"
+              class="mainNav__list__button"
+            >
+              Hard Skills
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="softSkillsTranslate()"
+              id="softSkillsButton"
+              title="Soft Skills"
+              class="mainNav__list__button"
+            >
+              Soft Skills
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="interestTranslate()"
+              id="interestButton"
+              title="Centre d'intérêts"
+              class="mainNav__list__button"
+            >
+              Centre d'intérêts
+            </button>
+          </li>
         </ul>
       </nav>
-      <section id="trainingCard"  class = "training">
+      <section id="trainingCard" class="training">
         <article class="training__card">
           <h2>Formations</h2>
-            <ul>
-            <li><strong>Mars 2022 - Septembre 2022   </strong><em>OpenClassrooms</em> Formation développeur web</li>
-            <li><strong>2006 - 2008   </strong><em>Lycée André Malraux</em>  Baccalauréat metier des arts et des industries graphiques (Obtenu avec mention)</li>
-            <li><strong>2004 - 2006   </strong><em>Lycée André Malraux</em>  BEP Metiers de la communication et des industries graphiques.</li>
-              <li><strong>Anglais  </strong>Niveau B1</li>
-            </ul>
+          <ul>
+            <li>
+              <strong>Mars 2022 - Septembre 2022 </strong
+              ><em>OpenClassrooms</em> Formation développeur web
+            </li>
+            <li>
+              <strong>2006 - 2008 </strong
+              ><em>Lycée André Malraux</em> Baccalauréat metier des arts et des
+              industries graphiques (Obtenu avec mention)
+            </li>
+            <li>
+              <strong>2004 - 2006 </strong><em>Lycée André Malraux</em> BEP
+              Metiers de la communication et des industries graphiques.
+            </li>
+            <li><strong>Anglais </strong>Niveau B1</li>
+          </ul>
         </article>
       </section>
       <section id="experienceCard" class="experience">
         <article class="experience__card">
           <h2>&#201;xperiences professionnelles notables</h2>
           <ul>
-            <li><strong>2021 - 2022 <em>SITEL </em></strong><em>Chargé de clientèle pour le compte de ENGIE - DTR </em><br>Aide à la navigation web de client via outils de contrôle à distance afin d'aider à la digitalisation de la clientele depuis un service web. Gestion de facturation </li>
-            <li><strong>2016 - 2018 <em>Carl Zeiss Meditec </em></strong><em>Tourneur Fraiseur </em><br>Suivis de procédure de fabrication, programmation des cycles d'usinage ainsi que de fraisage d'implant, maintenance de machines, contrôle de la qualité du produit, respect de cahier des charges</li>
-            <li><strong>2015 <em>Auto-entrepreneur </em></strong><em>Dépannage et cours d'informatique à domicile </em><br>Maintenance et dépannage informatique en tout genre sur Windows / OSX, assemblages d'ordinateurs, cours personnalisé d'informatique divers et varié </li>
-            <li><strong>2013 - 2014 <em>SITEL </em></strong> <em>Télé Technicien ADSL pour le compte de SFR </em> <br> Prise en charge de clients, suivis de dossier, assistance informatique, travail en autonomie, gestion de statistique personnelle à des fins de productivité</li>
+            <li>
+              <strong>2021 - 2022 <em>SITEL </em></strong
+              ><em>Chargé de clientèle pour le compte de ENGIE - DTR </em
+              ><br />Aide à la navigation web de client via outils de contrôle à
+              distance afin d'aider à la digitalisation de la clientele depuis
+              un service web. Gestion de facturation
+            </li>
+            <li>
+              <strong>2016 - 2018 <em>Carl Zeiss Meditec </em></strong
+              ><em>Tourneur Fraiseur </em><br />Suivis de procédure de
+              fabrication, programmation des cycles d'usinage ainsi que de
+              fraisage d'implant, maintenance de machines, contrôle de la
+              qualité du produit, respect de cahier des charges
+            </li>
+            <li>
+              <strong>2015 <em>Auto-entrepreneur </em></strong
+              ><em>Dépannage et cours d'informatique à domicile </em
+              ><br />Maintenance et dépannage informatique en tout genre sur
+              Windows / OSX, assemblages d'ordinateurs, cours personnalisé
+              d'informatique divers et varié
+            </li>
+            <li>
+              <strong>2013 - 2014 <em>SITEL </em></strong>
+              <em>Télé Technicien ADSL pour le compte de SFR </em> <br />
+              Prise en charge de clients, suivis de dossier, assistance
+              informatique, travail en autonomie, gestion de statistique
+              personnelle à des fins de productivité
+            </li>
           </ul>
         </article>
       </section>
@@ -147,16 +244,79 @@
           <h2>Langages connus</h2>
           <h3>Front-end</h3>
           <ul>
-            <li ><figure><img class="language__logo" src="./public/asset/html5.png" alt="logo html"  title="HTML 5"></figure></li>
-            <li><figure><img class="language__logo" src="./public/asset/css3.png" alt="logo css"  title="CSS 3"></figure></li>
-            <li><figure><img class="language__logo" src="./public/asset/JavaScript.png" alt="logo javascript"  title="JavaScript"></figure></li>
-            <li><figure><img class="language__logo" src="./public/asset/reactNative.png" alt="logo React Native" title="React Native"></figure></li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/html5.png"
+                  alt="logo html"
+                  title="HTML 5"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/css3.png"
+                  alt="logo css"
+                  title="CSS 3"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/JavaScript.png"
+                  alt="logo javascript"
+                  title="JavaScript"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/reactNative.png"
+                  alt="logo React Native"
+                  title="React Native"
+                />
+              </figure>
+            </li>
           </ul>
           <h3>Back-end</h3>
           <ul>
-            <li><figure><img class="language__logo" src="./public/asset/Node.js.png" alt="logo Node JS" title="Node.js"></figure></li>
-            <li><figure><img class="language__logo" src="./public/asset/express.js.png" alt="logo express" title="express.js"></figure></li>
-            <li><figure><img class="language__logo" src="./public/asset/mongodb.png" alt="logo mongodb" title="mongoDB"></figure></li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/Node.js.png"
+                  alt="logo Node JS"
+                  title="Node.js"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/express.js.png"
+                  alt="logo express"
+                  title="express.js"
+                />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  class="language__logo"
+                  src="./public/asset/mongodb.png"
+                  alt="logo mongodb"
+                  title="mongoDB"
+                />
+              </figure>
+            </li>
           </ul>
         </article>
       </section>
@@ -187,12 +347,12 @@
       </section>
       <button onclick="backToTop()" id="backToTopBtn" title="Haut de page">
         <lord-icon
-              src="https://cdn.lordicon.com/koyivthb.json"
-              trigger="loop"
-              colors="primary:#121331,secondary:#e83a30"
-              style="width:60px;height:60px">
-      </lord-icon>
-
+          src="https://cdn.lordicon.com/koyivthb.json"
+          trigger="loop"
+          colors="primary:#121331,secondary:#e83a30"
+          style="width: 60px; height: 60px"
+        >
+        </lord-icon>
       </button>
     </main>
     <footer>
@@ -201,32 +361,41 @@
         <ul>
           <li class="footerNav">
             <a href="#contact">
-            <lord-icon
-                    src="https://cdn.lordicon.com/wloilxuq.json"
-                    trigger="loop"
-                    colors="primary:#121331,secondary:#e83a30"
-                    style="width:50px;height:50px">
-            </lord-icon>
-            Contact
-          </a>
+              <lord-icon
+                src="https://cdn.lordicon.com/wloilxuq.json"
+                trigger="loop"
+                colors="primary:#121331,secondary:#e83a30"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+              Contact
+            </a>
           </li>
           <li class="footerNav">
             <a href="https://github.com/Nilyss">
-            <img class= "navIcon" src="public/asset/github.png" alt="github logo">
-            GitHub
+              <img
+                class="navIcon"
+                src="public/asset/github.png"
+                alt="github logo"
+              />
+              GitHub
             </a>
           </li>
           <li class="footerNav">
             <a href="https://www.linkedin.com/in/nicolas-decressac-2a59a4234/">
-            <img class= "navIcon" src="public/asset/linkedIn.png" alt="linkedInLogo">
+              <img
+                class="navIcon"
+                src="public/asset/linkedIn.png"
+                alt="linkedInLogo"
+              />
               LinkedIn
-          </a>
+            </a>
           </li>
         </ul>
       </nav>
     </footer>
-  <!-- font awesome library -->
-<!--  <script src="https://kit.fontawesome.com/65f76cf6ae.js" crossorigin="anonymous"></script>-->
+    <!-- font awesome library -->
+    <!--  <script src="https://kit.fontawesome.com/65f76cf6ae.js" crossorigin="anonymous"></script>-->
     <!-- lord icon library -->
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
     <script src="public/js/button.js"></script>

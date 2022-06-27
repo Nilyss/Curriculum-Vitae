@@ -1,14 +1,15 @@
-$fontPrimary: 'Cascadia Code', sans-serif;
-$fontSecondary : 'Ubuntu', sans-serif;
-$fontTertiary : 'Daniel', sans-serif;
+$fontPrimary: "Cascadia Code", sans-serif;
+$fontSecondary: "Ubuntu", sans-serif;
+$fontTertiary: "Daniel", sans-serif;
 
 $fontColorPrimary: #000000;
 
-$gradient: linear-gradient(-425deg,
-        #231557 0%,
-        #44107a 29%,
-        #ff1361 67%,
-        #fff800 100%
+$gradient: linear-gradient(
+  -425deg,
+  #231557 0%,
+  #44107a 29%,
+  #ff1361 67%,
+  #fff800 100%
 );
 
 $loaderBackground: #484343;
@@ -23,5 +24,6 @@ $breakpointDesktop: 1161px;
 
 $borderRadiusArticles: 1rem;
 
-$boxShadow:  rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-$boxShadowArticle:  rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+$boxShadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+$boxShadowArticle: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;

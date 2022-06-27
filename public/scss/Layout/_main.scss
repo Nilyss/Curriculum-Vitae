@@ -1,6 +1,6 @@
-@import '../Utils/variables.scss';
-@import '../Utils/mixins.scss';
-@import '../Utils/_keyframes.scss';
+@import "../Utils/variables.scss";
+@import "../Utils/mixins.scss";
+@import "../Utils/_keyframes.scss";
 
 main {
   overflow: hidden;
@@ -27,7 +27,7 @@ main {
   }
 
   article {
-    @media(max-width: $breakpointMobile) {
+    @media (max-width: $breakpointMobile) {
       width: 100%;
       margin: auto;
       margin-bottom: 2rem;
@@ -44,12 +44,11 @@ main {
     font-size: 1.5rem;
   }
 }
-.mainNav{
-
+.mainNav {
   @media (max-width: $breakpointMobile) {
-  position: fixed;
+    position: fixed;
     top: 40rem;
-}
+  }
   position: fixed;
   top: 23rem;
   left: 2rem;
@@ -62,12 +61,12 @@ main {
     display: flex;
     flex-flow: column;
     @media (max-width: $breakpointMobile) {
-        display: none;
+      display: none;
     }
     &__button {
       background: url("../asset/articlebg.webp") no-repeat fixed;
       cursor: pointer;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       padding: 1rem;
       border: none;
       box-shadow: $boxShadow;
@@ -83,8 +82,12 @@ main {
   }
 }
 
-.training, .experience, .language, .softSkills, .interest {
-  @media(max-width: $breakpointMobile) {
+.training,
+.experience,
+.language,
+.softSkills,
+.interest {
+  @media (max-width: $breakpointMobile) {
     margin-left: 5%;
     margin: auto;
     transform: translateX(0);
@@ -106,7 +109,6 @@ main {
 }
 
 .language {
-
   h3 {
     margin-left: 3rem;
   }
@@ -116,7 +118,7 @@ main {
     object-fit: contain;
   }
   ul {
-    @media(max-width: $breakpointMobile) {
+    @media (max-width: $breakpointMobile) {
       flex-flow: column;
       align-items: center;
     }
@@ -124,4 +126,3 @@ main {
     justify-content: space-around;
   }
 }
-

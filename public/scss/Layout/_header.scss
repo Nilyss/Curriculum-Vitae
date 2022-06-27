@@ -120,12 +120,10 @@ header {
   cursor: pointer;
   &:hover {
     .banner__contact__environment {
-
-      @media(max-width: $breakpointTablet) {
+      @media (max-width: $breakpointTablet) {
         transform: translateX(-10%);
       }
       transform: translateX(-15%);
-
     }
   }
 }

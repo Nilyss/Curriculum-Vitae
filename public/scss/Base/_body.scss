@@ -1,8 +1,8 @@
-@import '../Utils/variables.scss';
-@import '../Utils/mixins.scss';
-@import '../Utils/_keyframes.scss';
+@import "../Utils/variables.scss";
+@import "../Utils/mixins.scss";
+@import "../Utils/_keyframes.scss";
 
-*{
+* {
   @media (max-width: $breakpointMobile) {
     max-width: 768px;
   }
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     pointer-events: none;
     &::before {
-      content: '';
+      content: "";
       position: fixed;
       top: 0;
       left: 0;
@@ -31,41 +31,44 @@ body {
     }
   }
 
-  .loader__wave1, .loader__wave2, .loader__wave3 {
+  .loader__wave1,
+  .loader__wave2,
+  .loader__wave3 {
     position: fixed;
     z-index: 9998;
-    width: .5rem;
+    width: 0.5rem;
     height: 3.5rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background: $gradient;
     pointer-events: none;
   }
 
-.loader__icon {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  top: 37%;
-  left: 37.5%;
-  animation: loaderBackgroundFadeOut 2500ms forwards;
-}
+  .loader__icon {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    top: 37%;
+    left: 37.5%;
+    animation: loaderBackgroundFadeOut 2500ms forwards;
+  }
 
   .loader__wave1 {
     top: 47%;
     left: 50%;
-    animation: waveLoader 1250ms  both 400ms, loaderBackgroundFadeOut 2500ms forwards;
+    animation: waveLoader 1250ms both 400ms,
+      loaderBackgroundFadeOut 2500ms forwards;
   }
   .loader__wave2 {
     top: 47%;
     left: 50.5%;
-    animation: waveLoader 1200ms  both 200ms , loaderBackgroundFadeOut 2500ms forwards;
+    animation: waveLoader 1200ms both 200ms,
+      loaderBackgroundFadeOut 2500ms forwards;
   }
-  .loader__wave3{
+  .loader__wave3 {
     top: 47%;
     left: 49.5%;
-    animation: waveLoader 1000ms  both, loaderBackgroundFadeOut 2500ms forwards;
+    animation: waveLoader 1000ms both, loaderBackgroundFadeOut 2500ms forwards;
   }
-
 }
 
 #backToTopBtn {

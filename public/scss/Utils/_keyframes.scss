@@ -18,11 +18,14 @@
 
 @keyframes boxShadowHover {
   0% {
-     box-shadow:  rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
   100% {
-    box-shadow:  rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 28px 43px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 28px 43px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 }
 
@@ -31,15 +34,15 @@
     transform: translateY(0rem) scale(0);
   }
   100% {
-  transform:translateY(1.2rem) scale(1.1);
+    transform: translateY(1.2rem) scale(1.1);
   }
 }
 
-@keyframes overflowScrollingLoader{
+@keyframes overflowScrollingLoader {
   0% {
     overflow: hidden;
   }
-  99%{
+  99% {
     overflow: hidden;
   }
   100% {
@@ -48,23 +51,23 @@
 }
 
 @keyframes loaderBackgroundFadeOut {
-  0%{
+  0% {
     opacity: 1;
   }
   95% {
     opacity: 1;
   }
   100% {
-opacity: 0;
-}
+    opacity: 0;
+  }
 }
 
 @keyframes waveLoader {
-    0%{
+  0% {
     transform: scaleY(1);
-    }
-  50%{
-    transform: scaleY(-1) ;
+  }
+  50% {
+    transform: scaleY(-1);
   }
   100% {
     transform: scaleY(1);
@@ -75,10 +78,10 @@ opacity: 0;
   0% {
     transform: translateY(0);
   }
-  48%{
+  48% {
     transform: translateY(0);
   }
-  80%{
+  80% {
     transform: translateY(33%);
   }
   100% {
