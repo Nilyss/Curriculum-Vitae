@@ -67,12 +67,12 @@ main {
       background: url("../asset/articlebg.webp") no-repeat fixed;
       cursor: pointer;
       border-radius: 0.5rem;
-      padding: 1rem;
+      padding: .5rem;
       border: none;
       box-shadow: $boxShadow;
       @include scaleHover;
       @include fontTitle;
-      font-size: 1.5rem;
+      font-size: 2rem;
 
       &:hover {
         @include buttonGradientHover;
